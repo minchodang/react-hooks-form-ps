@@ -1,4 +1,5 @@
 import { FormProvider, useForm } from 'react-hook-form';
+import { BankInput } from '../../components/pages/BankInput';
 
 export default function Bank() {
   const methods = useForm({
@@ -7,8 +8,7 @@ export default function Bank() {
 
   return (
     <FormProvider {...methods}>
-      <div>기본정보</div>
-      <div>계좌정보</div>
+      <BankInput />
     </FormProvider>
   );
 }
